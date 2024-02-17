@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" modified="2024-02-16T09:28:37.799Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="HIyleOGdQ1H6lLWJaF64" version="23.1.5" type="device">
+  <diagram name="Page-1" id="cQiR9Pma2_qafjoG4Azz">
+    <mxGraphModel dx="728" dy="425" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="232" width="615" height="307" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="nfVvnWmWMBDBN6uzQF8L-1" target="nfVvnWmWMBDBN6uzQF8L-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;words&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="139" y="254" width="200" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-9" value="&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;word_id INT PK&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;word_label STRING&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;word_type_id INT FK&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nfVvnWmWMBDBN6uzQF8L-1">
+          <mxGeometry x="4" y="25" width="153" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-6" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;meanings&lt;br&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="351" width="222" height="131" as="geometry">
+            <mxRectangle x="471" y="270" width="110" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-10" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;meaning_id INT PK&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;ar_synonym STRING&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;en_meaning STRING&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;example STRING&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;word_id INT FK&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nfVvnWmWMBDBN6uzQF8L-6">
+          <mxGeometry x="8" y="25" width="156" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="nfVvnWmWMBDBN6uzQF8L-11" target="nfVvnWmWMBDBN6uzQF8L-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-11" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;types&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="438" width="200" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="nfVvnWmWMBDBN6uzQF8L-12" value="&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;type_id INT PK&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;type_label STRING&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nfVvnWmWMBDBN6uzQF8L-11">
+          <mxGeometry x="9" y="25" width="141" height="48" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
