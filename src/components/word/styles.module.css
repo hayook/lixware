@@ -1,0 +1,38 @@
+.wordCard {
+	display: flex;
+	flex-direction: column;
+	align-items: cetner;
+	padding: 20px;
+	overflow-y: auto;
+	border: 1px solid var(--primary-clr);
+	border-radius: 10px;
+}
+
+.word {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.word .type {
+	color: #7e7e7e;
+	align-self: flex-end;
+}
+
+.meanings {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.meanings .meaning {
+	display: flex;
+	gap: 7px;
+}
+
+.meanings .meaning .meaningNumber {
+	font-size: 1.2em;
+}
+
+.meanings .meaning .meaningContent {}
