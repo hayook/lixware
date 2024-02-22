@@ -1,0 +1,45 @@
+.homeContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(157px, 1fr));
+	gap: 25px;
+	padding-top: 70px;
+	padding-bottom: 25px;
+}
+
+.wordCard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 25px;
+	border: 1px solid var(--primary-clr-300);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.wordCard:hover {
+	border-color: var(--primary-clr);
+}
+
+
+.addWord {
+	position: fixed;
+	--pos: 18px;
+	bottom: var(--pos);
+	right: var(--pos);
+	transform: translate(-50%, -50%);
+	background: var(--primary-clr);
+	border-radius: 50%;
+	--dims: 46px;
+	width: var(--dims);
+	height: var(--dims);
+	color: black;
+}
+
+.addWord span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2.8em;
+}
