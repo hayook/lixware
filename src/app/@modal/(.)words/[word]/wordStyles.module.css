@@ -1,0 +1,4 @@
+.wordCard {
+	max-height: 85vh !important;
+	background: var(--secondary-clr);
+}

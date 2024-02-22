@@ -11,11 +11,12 @@ type Props = Readonly<{
 	modal: React.ReactNode;
 }>
 
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children, modal }: Props) {
 	return (
 		<html lang="en">
 			<body>
 				{children}
+				{modal}
 			</body>
 		</html>
 	);
