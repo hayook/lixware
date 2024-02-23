@@ -22,3 +22,5 @@ export default async function NewWordPage() {
 		</div>
 	);
 }
+
+export const revalidate = 86400;
