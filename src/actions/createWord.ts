@@ -13,7 +13,6 @@ export async function createWord(state: any, formData: FormData) {
 
 	// Connecting to the database
 	const db = await sqlite3(process.env.DB as string);
-	console.log(" ✓ Word inserted successfully");
 
 	// Inserting the word
 	const { lastID: wordId } = await db.run(sql, word, wordTypeId);
@@ -21,6 +20,8 @@ export async function createWord(state: any, formData: FormData) {
 	// Inserting the word meanings
 	const [meaningsSql, params] = prepareMeaningsQuery(meanings, wordId as number); // should handle the edge cases
 	await db.run(meaningsSql, ...params);
+
+	console.log(" ✓ Word inserted successfully");
 
 	return state;
 }
