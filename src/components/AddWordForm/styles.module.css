@@ -81,9 +81,9 @@
 	cursor: pointer;
 }
 
-.funcs button.disabled {
+button.disabled {
 	opacity: .6;
-	cursor: not-allowed;
+	cursor: not-allowed !important;
 }
 
 .funcs button.addMeaning {

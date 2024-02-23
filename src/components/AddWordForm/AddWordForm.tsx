@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom";
 import { CgAdd } from "react-icons/cg";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import Dropdown from "@/components/Dropdown/Dropdown";
@@ -106,7 +106,19 @@ export default function AddWordFrom<V>({ options }: Props<V>) {
 					</button>
 				</div>
 			</div>
-			<button className={styles.addWord}>Add word</button>
-		</form >
+			<Submit></Submit>
+		</form>
+	);
+}
+
+function Submit() {
+
+	const { pending } = useFormStatus();
+	return (
+		<button
+			type="submit"
+			className={`${styles.addWord} ${pending ? styles.disabled : ""}`}
+			disabled={pending}
+		>Add word</button>
 	);
 }
