@@ -1,7 +1,4 @@
 
--- Insert types
-INSERT INTO types (type_label) VALUES ("Noun"), ("Verb"), ("Adjective"), ("Adverb"), ("Conjunction"), ("Preposition");
-
 -- Insert words with types and meanings
 INSERT INTO words (word_label, word_type_id) VALUES 
   ("Ubiquitous", 1),
