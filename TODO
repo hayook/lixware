@@ -1,0 +1,9 @@
+
+
+	* fix the css problem when visiting the word page then back to the previous page (CSS file not loaded)
+	* database file validation
+	* Function keys
+	* Flip cards
+	* Noun/Verb/Adjective tables for a word
+	* Differences system to make differences bertween words
+	* Analytics
